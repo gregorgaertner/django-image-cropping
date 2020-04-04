@@ -13,14 +13,14 @@ django-image-cropping
     :target: https://coveralls.io/r/jonasundderwolf/django-image-cropping
     :alt: Coverage
 
-django-image-cropping is an app for cropping uploaded images via Django's admin backend using `Jcrop
+*django-image-cropping* is an app for cropping uploaded images via Django's admin backend using `Jcrop
 <https://github.com/tapmodo/Jcrop>`_.
 
 Screenshot:
 
 .. image:: http://www.jonasundderwolf.de/media/images/django_image_cropping_example.png
 
-django-image-cropping is perfect when you need images with a specific size for your templates but want your
+*django-image-cropping* is perfect when you need images with a specific size for your templates but want your
 users or editors to upload images of any dimension. It presents a selection with a fixed aspect ratio so your users
 can't break the layout with oddly-sized images.
 
@@ -35,11 +35,11 @@ Also works with `FeinCMS <https://github.com/feincms/feincms>`_ content types!
 Installation
 ============
 
-#. Install django-image-cropping using ``pip``::
+#. Install *django-image-cropping* using ``pip``::
 
     pip install django-image-cropping
 
-By default ``django-image-cropping`` ships with an ``easy-thumbnails``-backend which requires ``easy-thumbnails`` to also be installed
+By default *django-image-cropping* ships with an ``easy-thumbnails``-backend which requires ``easy-thumbnails`` to also be installed
 and added to the ``INSTALLED_APPS``.
 
 The `easy-thumbnails` backend requires that you adjust the thumbnail processors in your ``settings``::
@@ -97,7 +97,7 @@ area.
 Backends
 ========
 
-django-image-cropping delegates the cropped image generation to a backend.
+*django-image-cropping* delegates the cropped image generation to a backend.
 
 A backend based on `easy-thumbnails` is provided, but it's possible to use a custom backend.
 The ``IMAGE_CROPPING_BACKEND`` setting expects a dotted path to a class that implements the required methods.
@@ -115,7 +115,7 @@ Default settings::
 Frontend
 ========
 
-django-image-cropping provides a templatetag for displaying a cropped thumbnail.
+*django-image-cropping* provides a templatetag for displaying a cropped thumbnail.
 Any other processor parameter (like ``bw=True`` or ``upscale=True``) will be forwarded to the backend::
 
     {% cropped_thumbnail yourmodelinstance "ratiofieldname" [scale=INT|width=INT|height=INT|max_size="INTxINT"] %}
@@ -349,7 +349,7 @@ Changelog
 1.1
 ---
 
-- Make django-image-cropping compatible with Django 1.11
+- Make *django-image-cropping* compatible with Django 1.11
 
 1.0.4
 -----
